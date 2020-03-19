@@ -1,0 +1,26 @@
+{
+  "name": "puerta-del-sol",
+  "version": "1.0.0",
+  "description": "web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "server": "http-server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unozerocode/puerta-del-sol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unozerocode/puerta-del-sol/issues"
+  },
+  "homepage": "https://github.com/unozerocode/puerta-del-sol#readme",
+  "devDependencies": {
+    "cypress": "^4.2.0"
+  },
+  "dependencies": {
+    "http-server": "^0.12.1"
+  }
+}
