@@ -14,8 +14,9 @@ context('Window', () => {
   })
 
   it("Check button", () => {
+      cy.scrollTo("bottom")
       cy.get('.button').click()
-      cy.contains("Habitación Estándar")
+      cy.contains("Habitación Estándar",{ timeout: 10000 })
       cy.contains("Habitación Doble")
       cy.contains("Habitación Duplex")
   })
