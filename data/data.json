@@ -1,0 +1,50 @@
+{
+    "rooms": [
+        {
+            "id": "r1hNak5Kdn",
+            "tipo": "Habitación Estándar",
+            "precio": "1,200",
+            "servicios": ["Aire acondicionado","Agua Caliente","Masajes","Wi-Fi","TV","Estacionamiento","Cocina Común","Alberca","Restaurante"],
+            "descripcion": "Habitaciones elegantes y confortables para dos personas, las habitaciones cuentan con una cama King Size y Aire Acondicionado. </br><p>¡Perfecta para un buen descanso!</p>",
+            "huespedes": 2,
+            "imagenes": ["images/pictures/e-a/720Asset5.jpg","images/pictures/e-a/19201Asset5.jpg","images/pictures/e-a/IMG_2639.jpeg","images/pictures/e-a/IMG_2641.jpeg","images/pictures/e-a/IMG_2651.jpeg","images/pictures/e-a/IMG_2640.jpeg","images/pictures/e-a/IMG_2642.jpeg","images/pictures/e-a/IMG_2652.jpeg"]
+        },
+        {
+            "id": "r2QAYPBnzE",
+            "tipo": "Habitación Estándar",
+            "precio": "750",
+            "servicios": ["Ventilador","Agua Caliente","Masajes","Wi-Fi","TV","Estacionamiento","Cocina Común","Alberca","Restaurante"],
+            "descripcion": "Habitaciones clásicas y elegantes para dos personas, las habitaciones disponen de una cama matrimonial y ventilador. </br> <p>¡Ideal para una estancia tranquila!</p>",
+            "huespedes": 2,
+            "imagenes": ["images/pictures/e-v/720Asset7.jpg","images/pictures/e-v/19201Asset6.jpg","images/pictures/e-v/IMG_2631.jpeg","images/pictures/e-v/IMG_2633.jpeg","images/pictures/e-v/IMG_2632.jpeg","images/pictures/e-v/IMG_2635.jpeg","images/pictures/e-v/IMG_2634.jpeg","images/pictures/e-v/IMG_2638.jpeg"]
+        },
+        {
+            "id": "r3UhsU9VwU",
+            "tipo": "Habitación Doble",
+            "precio": "1,500",
+            "servicios": ["Aire acondicionado","Agua Caliente","Masajes","Wi-Fi","TV","Estacionamiento","Cocina Común","Alberca","Restaurante","Frigobar (algunas habitaciones)","Terraza (algunas habitaciones)"],
+            "descripcion": "Habitaciones elegantes con espacio suficiente para cuatro (incluso cinco) personas, las habitaciones cuentan aire acondicionado y dos camas: una cama King Size y una cama matrimonial, o dos camas matrimoniales. Algunas habitaciones disponen de terraza con vistas al mar y frigobar. </br><p>¡Ideal para la familia!</p>",
+            "huespedes": 4,
+            "imagenes": ["images/pictures/d-a/720Asset2.jpg","images/pictures/d-a/19201Asset3.jpg","images/pictures/d-a/IMG_2626.jpeg","images/pictures/d-a/IMG_2624.jpeg","images/pictures/d-a/IMG_2628.jpeg","images/pictures/d-a/IMG_2629.jpeg","images/pictures/d-a/IMG_2625.jpeg","images/pictures/d-a/IMG_2630.jpeg","images/pictures/d-a/IMG_2627.jpeg"]
+        },
+        {
+            "id": "r48XGEptk6",
+            "tipo": "Habitación Doble",
+            "precio": "1,200",
+            "servicios": ["Ventilador","Agua Caliente","Masajes","Wi-Fi","TV","Estacionamiento","Cocina Común","Alberca","Restaurante","Frigobar (algunas habitaciones)","Terraza (algunas habitaciones)"],
+            "descripcion": "Habitaciones elegantes con disponibilidad para cuatro (incluso cinco) personas, las habitaciones cuentan con ventilador y dos camas matrimoniales. Algunas habitaciones disponen de terraza con vista al mar y frigobar. </br><p>¡Ideal para la familia!</p>",
+            "huespedes": 4,
+            "imagenes": ["images/pictures/d-v/720Asset1.jpg","images/pictures/d-v/19201Asset2.jpg","images/pictures/d-v/IMG_2664.jpeg","images/pictures/d-v/IMG_2648.jpeg","images/pictures/d-v/IMG_2665.jpeg","images/pictures/d-v/IMG_2647.jpeg"]
+        },
+        {
+            "id": "r5kN3ZjUe5",
+            "tipo": "Habitación Duplex",
+            "precio": "1,800",
+            "servicios": ["Aire acondicionado","Agua Caliente","Masajes","Wi-Fi","TV","Estacionamiento","Cocina Común","Alberca","Restaurante","Frigobar (algunas habitaciones)","Terraza (algunas habitaciones)"],
+            "descripcion": "Habitación lujosa y confortable para cuatro personas, esta conformada por dos pisos y dos camas: una cama King Size y una cama Queen Size. Algunas habitaciones disponen de terraza con vista al mar y frigobar. </br><p>¡Ambiente inolvidable ideal para la familia!</p>",
+            "huespedes": 4,
+            "imagenes": ["images/pictures/d-x/720Asset3.jpg","images/pictures/d-x/19201Asset4.jpg","images/pictures/d-x/IMG_2661.jpeg","images/pictures/d-x/IMG_2656.jpeg","images/pictures/d-x/IMG_2658.jpeg","images/pictures/d-x/IMG_2662.jpeg","images/pictures/d-x/IMG_2649.jpeg","images/pictures/d-x/IMG_2657.jpeg","images/pictures/d-x/IMG_2660.jpeg","images/pictures/d-x/IMG_2663.jpeg"]
+        }
+    ]
+   
+}

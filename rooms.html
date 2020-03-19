@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="es">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W2NKWH7');
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>Habitaciones</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+        content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/logos/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800%7COswald:300,400,500%7COld+Standard+TT:400,400i,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <script>
+        fetch("data/data.json")
+        .then(response => response.json())
+        .then(json => getRooms(json));
+        function getRooms(result){
+          for (var i = 0; i < result.rooms.length ; i++) {
+            var serv = (result.rooms[i].servicios[0] == "Ventilador") ? "mdi mdi-fan" : "mdi mdi-air-conditioner"
+            
+              var text = [' <div class="col-sm-6 col-lg-4 wow-outer">',
+                  '<article class="post-classic wow slideInLeft"><a class="post-classic-media" href="single-room.html?r='+result.rooms[i].id+'"><img src="'+result.rooms[i].imagenes[0]+'" alt="" width="370" height="264"/></a>',
+                    '<h4 class="post-classic-title"><div>'+result.rooms[i].tipo+'</div></h4>',
+                    '<ul class="post-classic-meta">',
+                      '<li><a class="button-winona" href="#">$ '+result.rooms[i].precio+'</a></li>',
+                      '<li><span class="mdi mdi-account-multiple">&nbsp;'+result.rooms[i].huespedes+' Personas</span></li>',
+                      '<li><span class="'+serv+'">&nbsp;'+result.rooms[i].servicios[0]+'</span></li>',
+                    '</ul>',
+                  '</article>',
+                '<a class="button button-lg button-primary button-winona wow slideInUp" href="single-room.html?r='+result.rooms[i].id+'">Mas detalles...</a></div>'].join('');
+              $('#rms').append(text);
+  
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2NKWH7" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '584861645644419',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v4.0'
+      });
+    };
+  </script>
+  <script async defer src="https://connect.facebook.net/es_LA/sdk.js"></script>
+    <div class="page">
+        <!-- Page Header-->
+        <header class="section page-header">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap context-dark">
+                <nav class="rd-navbar rd-navbar-thin" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                    data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed"
+                    data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed"
+                    data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-fixed"
+                    data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static"
+                    data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px"
+                    data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle"
+                                    data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+                                <!-- RD Navbar Brand--><a class="rd-navbar-brand d-md-none d-lg-block d-sm-none d-uno"
+                                    href="./"><img src="images/logos/logo6.png" alt="" width="140" height="45"></a>
+                                <div class="rd-navbar-block">
+                                    <ul class="list-inline-bordered">
+                                        <li class="font-weight-light pr-3"><a href="https://wa.me/529541287677"><span
+                                                    class="mdi mdi-whatsapp inset-right-4  text-uno-green"></span><span
+                                                    class="rd-navbar-hidden rd-navbar-title">954 128 7677</span></a>
+                                        </li>
+                                        <li class="font-weight-light"><a href="tel:+529545822922"><span
+                                                    class="mdi mdi-phone inset-right-4  text-uno-green"></span><span
+                                                    class="rd-navbar-hidden rd-navbar-title">954 582 2922</span></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+                                <!-- RD Navbar Brand-->
+                                <div class="d-sm-block d-lg-none d-xs-block container col-12 pt-3">
+                                    <a class=" row justify-content-center " href="./"><img src="images/logos/logo.png"
+                                            alt="" width="67" height="105" /></a></div>
+                                <!-- RD Navbar Nav-->
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item "><a class="rd-nav-link" href="./">Inicio</a>
+                                    </li>
+
+                                    <li class="rd-nav-item active"><a class="rd-nav-link"
+                                            href="rooms.html">Habitaciones</a>
+                                    </li>
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contáctanos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    
+        <!-- Breadcrumbs -->
+        <section class="breadcrumbs-custom bg-image context-dark"
+            style="background-image: url(images/pictures/19201Asset4-1.png);">
+            <div class="breadcrumbs-custom-inner">
+                <div class="container breadcrumbs-custom-container">
+                    <div class="breadcrumbs-custom-main">
+                        <h6 class="breadcrumbs-custom-subtitle title-decorated">Habitaciones</h6>
+                        <h1 class="breadcrumbs-custom-title">Habitaciones</h1>
+                    </div>
+                    <ul class="breadcrumbs-custom-path">
+                        <li><a href="./">Inicio</a></li>
+                        <li class="active">Habitaciones</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Our Rooms-->
+        <section class="section section-lg text-center">
+            <div class="container">
+                <div class="row row-50 justify-content-center" id="rms">
+
+                </div>
+            </div>
+        </section>
+         <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: 'v4.0'
+        });
+      };
+
+
+
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="1126810850692899" theme_color="#006699"
+      logged_in_greeting="Hola! Pregunta por nuestas habitaciones!"
+      logged_out_greeting="Necesitas hospedarte? !Contactános¡">
+    </div>
+        <!-- Page Footer-->
+      
+        <footer class="section footer-linked bg-gray-850">
+            <div class="footer-linked-main text-gray-350">
+                <div class="container">
+                    <div class="row justify-content-center">
+                    <div class="col-lg-4 pb-5 maxWidth ">
+              <a class=" row justify-content-center " href="./"><img src="images/logos/logo2.png" class="maxHeight2" alt=""
+                  width="130" height="211"  /></a>
+
+            </div>
+                        <div class="col-md-7 col-lg-4">
+                            <h5 class="footer-title">Enlaces</h5>
+                            <hr class="offset-right-1">
+
+                            <div class="row">
+
+                                <div class="container">
+                                    <ul class="container list list-xs">
+
+                                        <li><a href="./">Inicio</a></li>
+                                        <li><a href="contacts.html">Contáctanos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="col-md-7 col-lg-4">
+                            <h5 class="footer-title">Información de Contácto</h5>
+                            <hr>
+                            <ul class="list-sm">
+                                <li class="object-inline"><span
+                                        class="icon icon-md mdi mdi-map-marker text-uno-green"></span><a
+                                        href="https://goo.gl/maps/wLxXXyg72HGpDzvt5">Av. Del Morro, Playa Zicatela,
+                                        70934 Puerto Escondido, Oax.</a></li>
+                                <li class="object-inline"><span
+                                        class="icon icon-md mdi mdi-phone text-uno-green"></span>
+                                    <ul class="list-0">
+                                        <li><a href="tel:+529545822922">954 582 2922</a>
+                                    </ul>
+                                </li>
+                                <li class="object-inline"><span
+                                        class="icon icon-md mdi mdi-facebook text-uno-green"></span>
+                                    <ul class="list-0">
+                                        <li><a
+                                                href="https://www.facebook.com/bungalowspuertadelsol">bungalowspuertadelsol</a>
+                                    </ul>
+                                </li>
+                                <li class="object-inline"><span
+                                        class="icon icon-md mdi mdi-email-outline text-uno-green"></span><a
+                                        href="mailto:bungalowspuertadelsol@hotmail.com">bungalowspuertadelsol@hotmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-linked-aside col-12 justify-content-center">
+                            <div class="container">
+                                <div class="footer-minimal-inner justify-content-center">
+                                    <!-- Rights-->
+                                    <p class="rights"><span>&copy;&nbsp;</span><span
+                      class="copyright-year"></span><span>&nbsp;</span><span>Bungalows Puerta de Sol. Derechos
+                      Reservados.</span><span>&nbsp;</span><br />Desarrollado por <a
+                      href="https://www.unozerocode.com">UnoZero Code SA de CV.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <div class="preloader">
+    <div class="preloader-logo"><img src="images/logos/logo.png" alt="" width="67" height="105" srcset="images/logos/logo.png 2x"/>
+      </div>
+        <div class="preloader-body">
+            <div id="loadingProgressG">
+                <div class="loadingProgressG" id="loadingProgressG_1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/alert.min.js"></script>
+</body>
+
+</html>
